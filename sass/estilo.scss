@@ -1,7 +1,8 @@
-$cor: red;
-$bg: black;
-
-h2 {
-    color: $cor;
-    background-color: $bg;
+@import '_variaveis.scss';
+@import '_mixin.scss';
+@for $i from 1 through 3 {
+    .item-#{$i} {
+        background: $cor-principal;
+        margin-bottom: 2px;
+    }
 }

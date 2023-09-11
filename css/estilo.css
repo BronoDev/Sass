@@ -1,5 +1,54 @@
-h2 {
-  color: red;
-  background-color: black; }
+@charset "UTF-8";
+/* Mixin */
+h1 {
+  color: white;
+  background: black;
+  padding: 10px 5px; }
 
-/*# sourceMappingURL=estilo.css.map */
+h2 {
+  color: yellow;
+  background: black;
+  padding: 10px 5px; }
+
+/*Herança*/
+/*Múltiplas diretivas*/
+.vermelho {
+  color: red; }
+
+.vermelho {
+  background: black; }
+
+/*
+Encadeamento de diretivas
+Placeholders(%)
+*/
+.erro {
+  color: red; }
+
+.erro {
+  background: black; }
+
+.erro {
+  padding: 10px;
+  border: 1px solid red; }
+
+/*Diretivas de controle*/
+p {
+  color: black; }
+
+/*Diretivas de controle e Mixins*/
+body {
+  background: black;
+  color: white; }
+
+.item-1 {
+  background: orange;
+  margin-bottom: 2px; }
+
+.item-2 {
+  background: orange;
+  margin-bottom: 2px; }
+
+.item-3 {
+  background: orange;
+  margin-bottom: 2px; }
